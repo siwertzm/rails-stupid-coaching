@@ -1,0 +1,17 @@
+<div class="flex-column justify-content-center p-5">
+  <div class="container">
+    <img src="https://avatars.githubusercontent.com/u/118803905?v=4" alt="Avatar">
+    <p><%= @question %></p>
+    <span class="time-right"><%= Time.now.asctime %></span>
+  </div>
+
+  <div class="container darker">
+    <img src="https://avatars.githubusercontent.com/u/147151541?v=4" alt="Avatar" class="right">
+    <p><%= @answer %></p>
+    <span class="time-left"><%= Time.now.asctime %></span>
+  </div>
+
+  <div class="text-center">
+    <%= link_to "ask a new question", ask_path %>
+  </div>
+</div>
